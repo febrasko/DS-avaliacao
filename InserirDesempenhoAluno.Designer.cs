@@ -282,7 +282,7 @@ namespace Escola
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(12, 242);
+            this.btnEnviar.Location = new System.Drawing.Point(12, 223);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(75, 23);
             this.btnEnviar.TabIndex = 11;
@@ -292,7 +292,7 @@ namespace Escola
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(107, 242);
+            this.btnCancelar.Location = new System.Drawing.Point(93, 223);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 11;
@@ -303,7 +303,7 @@ namespace Escola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 277);
+            this.ClientSize = new System.Drawing.Size(450, 262);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.groupBox4);
