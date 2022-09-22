@@ -36,6 +36,8 @@ namespace Escola
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnAlunos = new System.Windows.Forms.Button();
             this.btnProfessores = new System.Windows.Forms.Button();
+            this.btnInserirDesempenhoAluno = new System.Windows.Forms.Button();
+            this.btnCadastrarProfessor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -101,11 +103,33 @@ namespace Escola
             this.btnProfessores.UseVisualStyleBackColor = true;
             this.btnProfessores.Click += new System.EventHandler(this.btnProfessores_Click);
             // 
+            // btnInserirDesempenhoAluno
+            // 
+            this.btnInserirDesempenhoAluno.Location = new System.Drawing.Point(61, 190);
+            this.btnInserirDesempenhoAluno.Name = "btnInserirDesempenhoAluno";
+            this.btnInserirDesempenhoAluno.Size = new System.Drawing.Size(117, 44);
+            this.btnInserirDesempenhoAluno.TabIndex = 3;
+            this.btnInserirDesempenhoAluno.Text = "Inserir nota de Aluno";
+            this.btnInserirDesempenhoAluno.UseVisualStyleBackColor = true;
+            this.btnInserirDesempenhoAluno.Click += new System.EventHandler(this.btnInserirDesempenhoAluno_Click);
+            // 
+            // btnCadastrarProfessor
+            // 
+            this.btnCadastrarProfessor.Location = new System.Drawing.Point(183, 190);
+            this.btnCadastrarProfessor.Name = "btnCadastrarProfessor";
+            this.btnCadastrarProfessor.Size = new System.Drawing.Size(117, 44);
+            this.btnCadastrarProfessor.TabIndex = 3;
+            this.btnCadastrarProfessor.Text = "Cadastrar Professor";
+            this.btnCadastrarProfessor.UseVisualStyleBackColor = true;
+            this.btnCadastrarProfessor.Click += new System.EventHandler(this.btnCadastrarProfessor_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 196);
+            this.ClientSize = new System.Drawing.Size(355, 251);
+            this.Controls.Add(this.btnCadastrarProfessor);
+            this.Controls.Add(this.btnInserirDesempenhoAluno);
             this.Controls.Add(this.btnProfessores);
             this.Controls.Add(this.btnAlunos);
             this.Controls.Add(this.txtSenha);
@@ -129,6 +153,8 @@ namespace Escola
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnAlunos;
         private System.Windows.Forms.Button btnProfessores;
+        private System.Windows.Forms.Button btnInserirDesempenhoAluno;
+        private System.Windows.Forms.Button btnCadastrarProfessor;
     }
 }
 

@@ -31,32 +31,34 @@ namespace Escola
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtRM = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCPF = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtBairro = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtRua = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtDisciplina = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtSalario = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnEnviar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -75,82 +77,82 @@ namespace Escola
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 20);
+            this.label2.Location = new System.Drawing.Point(6, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nome";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(71, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 3;
+            this.txtNome.Location = new System.Drawing.Point(70, 16);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(191, 23);
+            this.txtNome.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 49);
+            this.label3.Location = new System.Drawing.Point(6, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(25, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "RM";
             // 
-            // textBox2
+            // txtRM
             // 
-            this.textBox2.Location = new System.Drawing.Point(71, 46);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 3;
+            this.txtRM.Location = new System.Drawing.Point(70, 45);
+            this.txtRM.Name = "txtRM";
+            this.txtRM.Size = new System.Drawing.Size(100, 23);
+            this.txtRM.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 78);
+            this.label4.Location = new System.Drawing.Point(6, 77);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 15);
             this.label4.TabIndex = 2;
             this.label4.Text = "CPF";
             // 
-            // textBox3
+            // txtCPF
             // 
-            this.textBox3.Location = new System.Drawing.Point(71, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 3;
+            this.txtCPF.Location = new System.Drawing.Point(70, 74);
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(100, 23);
+            this.txtCPF.TabIndex = 3;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 107);
+            this.label5.Location = new System.Drawing.Point(6, 106);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 15);
             this.label5.TabIndex = 2;
             this.label5.Text = "Email";
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(71, 104);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 3;
+            this.txtEmail.Location = new System.Drawing.Point(70, 103);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 23);
+            this.txtEmail.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(14, 136);
+            this.label6.Location = new System.Drawing.Point(6, 135);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 15);
             this.label6.TabIndex = 2;
             this.label6.Text = "Telefone";
             // 
-            // textBox5
+            // txtTelefone
             // 
-            this.textBox5.Location = new System.Drawing.Point(71, 133);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 3;
+            this.txtTelefone.Location = new System.Drawing.Point(70, 132);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(100, 23);
+            this.txtTelefone.TabIndex = 3;
             // 
             // label7
             // 
@@ -161,12 +163,12 @@ namespace Escola
             this.label7.TabIndex = 2;
             this.label7.Text = "Estado";
             // 
-            // textBox6
+            // txtEstado
             // 
-            this.textBox6.Location = new System.Drawing.Point(63, 16);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
-            this.textBox6.TabIndex = 3;
+            this.txtEstado.Location = new System.Drawing.Point(63, 16);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(100, 23);
+            this.txtEstado.TabIndex = 3;
             // 
             // label8
             // 
@@ -177,12 +179,12 @@ namespace Escola
             this.label8.TabIndex = 2;
             this.label8.Text = "Cidade";
             // 
-            // textBox7
+            // txtCidade
             // 
-            this.textBox7.Location = new System.Drawing.Point(63, 45);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 23);
-            this.textBox7.TabIndex = 3;
+            this.txtCidade.Location = new System.Drawing.Point(63, 45);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(100, 23);
+            this.txtCidade.TabIndex = 3;
             // 
             // label9
             // 
@@ -193,12 +195,12 @@ namespace Escola
             this.label9.TabIndex = 2;
             this.label9.Text = "Bairro";
             // 
-            // textBox8
+            // txtBairro
             // 
-            this.textBox8.Location = new System.Drawing.Point(63, 74);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 23);
-            this.textBox8.TabIndex = 3;
+            this.txtBairro.Location = new System.Drawing.Point(63, 74);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(100, 23);
+            this.txtBairro.TabIndex = 3;
             // 
             // label10
             // 
@@ -209,12 +211,12 @@ namespace Escola
             this.label10.TabIndex = 2;
             this.label10.Text = "Rua";
             // 
-            // textBox9
+            // txtRua
             // 
-            this.textBox9.Location = new System.Drawing.Point(63, 103);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 23);
-            this.textBox9.TabIndex = 3;
+            this.txtRua.Location = new System.Drawing.Point(63, 103);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(100, 23);
+            this.txtRua.TabIndex = 3;
             // 
             // label11
             // 
@@ -225,60 +227,60 @@ namespace Escola
             this.label11.TabIndex = 2;
             this.label11.Text = "Numero";
             // 
-            // textBox10
+            // txtNumero
             // 
-            this.textBox10.Location = new System.Drawing.Point(63, 132);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 23);
-            this.textBox10.TabIndex = 3;
+            this.txtNumero.Location = new System.Drawing.Point(63, 132);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(100, 23);
+            this.txtNumero.TabIndex = 3;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(5, 25);
+            this.label12.Location = new System.Drawing.Point(6, 19);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(58, 15);
             this.label12.TabIndex = 2;
             this.label12.Text = "Disciplina";
             // 
-            // textBox11
+            // txtDisciplina
             // 
-            this.textBox11.Location = new System.Drawing.Point(62, 22);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 23);
-            this.textBox11.TabIndex = 3;
+            this.txtDisciplina.Location = new System.Drawing.Point(70, 16);
+            this.txtDisciplina.Name = "txtDisciplina";
+            this.txtDisciplina.Size = new System.Drawing.Size(100, 23);
+            this.txtDisciplina.TabIndex = 3;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(5, 54);
+            this.label13.Location = new System.Drawing.Point(6, 48);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(42, 15);
             this.label13.TabIndex = 2;
             this.label13.Text = "Salário";
             // 
-            // textBox12
+            // txtSalario
             // 
-            this.textBox12.Location = new System.Drawing.Point(62, 51);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 23);
-            this.textBox12.TabIndex = 3;
+            this.txtSalario.Location = new System.Drawing.Point(70, 45);
+            this.txtSalario.Name = "txtSalario";
+            this.txtSalario.Size = new System.Drawing.Size(100, 23);
+            this.txtSalario.TabIndex = 3;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNome);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtRM);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtCPF);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Location = new System.Drawing.Point(12, 53);
+            this.groupBox1.Controls.Add(this.txtTelefone);
+            this.groupBox1.Location = new System.Drawing.Point(12, 36);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(175, 169);
+            this.groupBox1.Size = new System.Drawing.Size(269, 169);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados Pessoais";
@@ -286,16 +288,16 @@ namespace Escola
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox10);
+            this.groupBox2.Controls.Add(this.txtEstado);
+            this.groupBox2.Controls.Add(this.txtNumero);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.txtCidade);
+            this.groupBox2.Controls.Add(this.txtRua);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Location = new System.Drawing.Point(193, 53);
+            this.groupBox2.Controls.Add(this.txtBairro);
+            this.groupBox2.Location = new System.Drawing.Point(287, 36);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(200, 169);
             this.groupBox2.TabIndex = 5;
@@ -305,21 +307,42 @@ namespace Escola
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.textBox11);
+            this.groupBox3.Controls.Add(this.txtDisciplina);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.textBox12);
-            this.groupBox3.Location = new System.Drawing.Point(12, 228);
+            this.groupBox3.Controls.Add(this.txtSalario);
+            this.groupBox3.Location = new System.Drawing.Point(12, 211);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(171, 91);
+            this.groupBox3.Size = new System.Drawing.Size(184, 91);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Dados de Contrato";
+            // 
+            // btnEnviar
+            // 
+            this.btnEnviar.Location = new System.Drawing.Point(12, 308);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
+            this.btnEnviar.TabIndex = 7;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(93, 308);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 7;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // CadastrarProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 349);
+            this.ClientSize = new System.Drawing.Size(506, 341);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -341,31 +364,33 @@ namespace Escola
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtRM;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtRua;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtDisciplina;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtSalario;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

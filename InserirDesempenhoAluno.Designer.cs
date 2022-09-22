@@ -30,26 +30,28 @@ namespace Escola
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cbResultado = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtFaltas = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbMF1 = new System.Windows.Forms.ComboBox();
+            this.cbMI1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtRM = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.cbMF2 = new System.Windows.Forms.ComboBox();
+            this.cbMI2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnEnviar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -58,61 +60,93 @@ namespace Escola
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.cbResultado);
             this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.textBox11);
+            this.groupBox3.Controls.Add(this.txtFaltas);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.textBox12);
-            this.groupBox3.Location = new System.Drawing.Point(12, 152);
+            this.groupBox3.Location = new System.Drawing.Point(12, 135);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(185, 91);
+            this.groupBox3.Size = new System.Drawing.Size(185, 82);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Outros";
+            // 
+            // cbResultado
+            // 
+            this.cbResultado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbResultado.FormattingEnabled = true;
+            this.cbResultado.Items.AddRange(new object[] {
+            "Aprovado",
+            "Reprovado"});
+            this.cbResultado.Location = new System.Drawing.Point(71, 45);
+            this.cbResultado.Name = "cbResultado";
+            this.cbResultado.Size = new System.Drawing.Size(100, 23);
+            this.cbResultado.TabIndex = 12;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(5, 25);
+            this.label12.Location = new System.Drawing.Point(6, 19);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(37, 15);
             this.label12.TabIndex = 2;
             this.label12.Text = "Faltas";
             // 
-            // textBox11
+            // txtFaltas
             // 
-            this.textBox11.Location = new System.Drawing.Point(70, 22);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 23);
-            this.textBox11.TabIndex = 3;
+            this.txtFaltas.Location = new System.Drawing.Point(71, 16);
+            this.txtFaltas.Name = "txtFaltas";
+            this.txtFaltas.Size = new System.Drawing.Size(100, 23);
+            this.txtFaltas.TabIndex = 3;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(5, 54);
+            this.label13.Location = new System.Drawing.Point(6, 48);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(59, 15);
             this.label13.TabIndex = 2;
             this.label13.Text = "Resultado";
             // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(70, 51);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 23);
-            this.textBox12.TabIndex = 3;
-            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cbMF1);
+            this.groupBox2.Controls.Add(this.cbMI1);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Location = new System.Drawing.Point(203, 54);
+            this.groupBox2.Location = new System.Drawing.Point(203, 37);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(256, 92);
+            this.groupBox2.Size = new System.Drawing.Size(215, 92);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Primeiro Semestre";
+            // 
+            // cbMF1
+            // 
+            this.cbMF1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMF1.FormattingEnabled = true;
+            this.cbMF1.Items.AddRange(new object[] {
+            "MB",
+            "B",
+            "R",
+            "I"});
+            this.cbMF1.Location = new System.Drawing.Point(135, 45);
+            this.cbMF1.Name = "cbMF1";
+            this.cbMF1.Size = new System.Drawing.Size(62, 23);
+            this.cbMF1.TabIndex = 12;
+            // 
+            // cbMI1
+            // 
+            this.cbMI1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMI1.FormattingEnabled = true;
+            this.cbMI1.Items.AddRange(new object[] {
+            "MB",
+            "B",
+            "R",
+            "I"});
+            this.cbMI1.Location = new System.Drawing.Point(135, 16);
+            this.cbMI1.Name = "cbMI1";
+            this.cbMI1.Size = new System.Drawing.Size(62, 23);
+            this.cbMI1.TabIndex = 12;
             // 
             // label7
             // 
@@ -123,13 +157,6 @@ namespace Escola
             this.label7.TabIndex = 2;
             this.label7.Text = "Menção Intermediária";
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(135, 16);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
-            this.textBox6.TabIndex = 3;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -137,22 +164,15 @@ namespace Escola
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 15);
             this.label8.TabIndex = 2;
-            this.label8.Text = "Menção FInal";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(135, 45);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 23);
-            this.textBox7.TabIndex = 3;
+            this.label8.Text = "Menção Final";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNome);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 53);
+            this.groupBox1.Controls.Add(this.txtRM);
+            this.groupBox1.Location = new System.Drawing.Point(12, 36);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(185, 92);
             this.groupBox1.TabIndex = 8;
@@ -162,34 +182,34 @@ namespace Escola
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 20);
+            this.label2.Location = new System.Drawing.Point(6, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nome";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(71, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 3;
+            this.txtNome.Location = new System.Drawing.Point(71, 16);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(100, 23);
+            this.txtNome.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 49);
+            this.label3.Location = new System.Drawing.Point(6, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(25, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "RM";
             // 
-            // textBox2
+            // txtRM
             // 
-            this.textBox2.Location = new System.Drawing.Point(71, 46);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 3;
+            this.txtRM.Location = new System.Drawing.Point(71, 45);
+            this.txtRM.Name = "txtRM";
+            this.txtRM.Size = new System.Drawing.Size(100, 23);
+            this.txtRM.TabIndex = 3;
             // 
             // label1
             // 
@@ -203,16 +223,44 @@ namespace Escola
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.cbMF2);
+            this.groupBox4.Controls.Add(this.cbMI2);
             this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Controls.Add(this.textBox3);
             this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Controls.Add(this.textBox4);
-            this.groupBox4.Location = new System.Drawing.Point(203, 152);
+            this.groupBox4.Location = new System.Drawing.Point(203, 135);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(256, 92);
+            this.groupBox4.Size = new System.Drawing.Size(215, 82);
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Primeiro Semestre";
+            this.groupBox4.Text = "Segundo Semestre";
+            // 
+            // cbMF2
+            // 
+            this.cbMF2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMF2.FormattingEnabled = true;
+            this.cbMF2.Items.AddRange(new object[] {
+            "MB",
+            "B",
+            "R",
+            "I"});
+            this.cbMF2.Location = new System.Drawing.Point(135, 45);
+            this.cbMF2.Name = "cbMF2";
+            this.cbMF2.Size = new System.Drawing.Size(62, 23);
+            this.cbMF2.TabIndex = 12;
+            // 
+            // cbMI2
+            // 
+            this.cbMI2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMI2.FormattingEnabled = true;
+            this.cbMI2.Items.AddRange(new object[] {
+            "MB",
+            "B",
+            "R",
+            "I"});
+            this.cbMI2.Location = new System.Drawing.Point(135, 16);
+            this.cbMI2.Name = "cbMI2";
+            this.cbMI2.Size = new System.Drawing.Size(62, 23);
+            this.cbMI2.TabIndex = 12;
             // 
             // label4
             // 
@@ -223,13 +271,6 @@ namespace Escola
             this.label4.TabIndex = 2;
             this.label4.Text = "Menção Intermediária";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(135, 16);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 3;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -237,20 +278,34 @@ namespace Escola
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 15);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Menção FInal";
+            this.label5.Text = "Menção Final";
             // 
-            // textBox4
+            // btnEnviar
             // 
-            this.textBox4.Location = new System.Drawing.Point(135, 45);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 3;
+            this.btnEnviar.Location = new System.Drawing.Point(12, 242);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
+            this.btnEnviar.TabIndex = 11;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(107, 242);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 11;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // InserirDesempenhoAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(500, 283);
+            this.ClientSize = new System.Drawing.Size(450, 277);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -275,24 +330,26 @@ namespace Escola
 
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtFaltas;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtRM;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ComboBox cbMF1;
+        private System.Windows.Forms.ComboBox cbMI1;
+        private System.Windows.Forms.ComboBox cbMF2;
+        private System.Windows.Forms.ComboBox cbMI2;
+        private System.Windows.Forms.ComboBox cbResultado;
     }
 }

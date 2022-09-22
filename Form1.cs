@@ -16,21 +16,6 @@ namespace Escola
         {
             InitializeComponent();
         }
-
-        private void btnEntrar_Click(object sender, EventArgs e)
-        {
-            if (txtLogin.Text == "" || txtSenha.Text == "")
-            {
-                MessageBox.Show("Preencha todos os campos!");
-            } else if (txtLogin.Text != "ETEC" && txtSenha.Text != "etec")
-            {
-                MessageBox.Show("Usuário ou senha inválidos.");
-            } else
-            {
-                ConsultarAlunos tela = new ConsultarAlunos();
-                tela.Show();
-            }
-        }
         private void btnAlunos_Click_1(object sender, EventArgs e)
         {
             if (txtLogin.Text == "" || txtSenha.Text == "")
@@ -61,6 +46,40 @@ namespace Escola
             else
             {
                 ConsultarProfessores tela = new ConsultarProfessores();
+                tela.Show();
+            }
+        }
+
+        private void btnInserirDesempenhoAluno_Click(object sender, EventArgs e)
+        {
+            if (txtLogin.Text == "" || txtSenha.Text == "")
+            {
+                MessageBox.Show("Preencha todos os campos!");
+            }
+            else if (txtLogin.Text != "ETEC" || txtSenha.Text != "etec")
+            {
+                MessageBox.Show("Usuário ou senha inválidos.");
+            }
+            else
+            {
+                InserirDesempenhoAluno tela = new InserirDesempenhoAluno();
+                tela.Show();
+            }
+        }
+
+        private void btnCadastrarProfessor_Click(object sender, EventArgs e)
+        {
+            if (txtLogin.Text == "" || txtSenha.Text == "")
+            {
+                MessageBox.Show("Preencha todos os campos!");
+            }
+            else if (txtLogin.Text != "ETEC" || txtSenha.Text != "etec")
+            {
+                MessageBox.Show("Usuário ou senha inválidos.");
+            }
+            else
+            {
+                CadastrarProfessor tela = new CadastrarProfessor();
                 tela.Show();
             }
         }
